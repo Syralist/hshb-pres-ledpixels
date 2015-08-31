@@ -84,11 +84,39 @@
 \section{Software}
 \divider{\insertsection}
 \begin{frame}[<+->]
-    \frametitle{Software}
+    \frametitle{Arduino Version}
     \begin{itemize}
-        \item .
-        \item .
-        \item .
+        \item Fork des Spiels von Kris Temmerman
+        \item Spiellogik und Displayansteuerung auf einem Arduino Due
+        \item Minimale Anpassung nötig für unseren Nachbau
+        \item keine Weiterentwicklung weil Arduino Programmierung nicht jedermanns Sache
+    \end{itemize}
+\end{frame}
+\begin{frame}[<+->]
+    \frametitle{Teensy Version}
+    \begin{itemize}
+        \item Teensy steuert Display über DMA
+        \item Zwei Datenleitungen für je eine Hälfte
+        \item Empfängt RGB Information über serielle Schnittstelle
+        \item Spieleprogrammierung mit beliebiger Sprache möglich
+    \end{itemize}
+\end{frame}
+\begin{frame}[<+->]
+    \frametitle{PyGame FTW}
+    \begin{itemize}
+        \item aktuelles Framework basiert auf PyGame
+        \item erstes Displaymodul direkt aus Python auf die Serielle Schnittstelle
+        \item neuste Version: Displayserver programmiert mit Node.js
+        \item läuft alles auf einem Raspberry Pi
+    \end{itemize}
+\end{frame}
+\begin{frame}[<+->]
+    \frametitle{Unser Framework}
+    \begin{itemize}
+        \item basiert auf PyGame
+        \item stellt ein Display Modul für den Displayserver bereit
+        \item Controllserver empfängt Bluetooth Daten und simuliert einen Joystick
+        \item Event Wrapper zur einfachen Verarbeitung der Signale vorhanden
     \end{itemize}
 \end{frame}
 
@@ -97,10 +125,10 @@
 \begin{frame}
     \frametitle{Weitere Infos}
     \begin{itemize}
-        \item \url{https://github.com/Syralist/hshb-pres-vim-intro}
-        \item \url{http://benmccormick.org/2014/06/30/learning-vim-in-2014-the-basics/}
-        \item \url{http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/}
-        \item \url{http://vim-adventures.com/}
+        \item \url{https://github.com/Syralist/hshb-pres-ledpixels}
+        \item \url{https://wiki.hackerspace-bremen.de/projekte/videogame/start}
+        \item \url{https://github.com/HackerspaceBremen}
+        \item \url{https://gist.github.com/jh0ker/8a63a66d368d7b48c89d}
     \end{itemize}
 \end{frame}
 \end{document}
