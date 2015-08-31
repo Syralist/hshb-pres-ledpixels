@@ -36,9 +36,9 @@
 \begin{frame}[<+->] %%Eine Folie
 	\frametitle{Worum geht es?} %%Folientitel
 	\begin{itemize}
-		\item .
-		\item .
-		\item .
+		\item Ein selbstgebautes Videospiel
+		\item Gemeinschaftsprojekt des Vereins
+		\item Open Source bei Hard- und Software
 	\end{itemize}
 \end{frame}
 
@@ -47,9 +47,37 @@
 \begin{frame}[<+->]
     \frametitle{Hardware}
     \begin{itemize}
-        \item .
-        \item .
-        \item .
+        \item Display aus 1800 WS2812b RGB LEDs
+        \item Rahmen selbst konstruiert und gebaut
+        \item Gefrästes Lochraster, darüber Diffusorpapier
+        \item Leistungsaufnahme maximal 350 Watt
+    \end{itemize}
+\end{frame} 
+\begin{frame}[<+->]
+    \frametitle{Display Ansteuerung}
+    \begin{itemize}
+        \item Urprüngliche Version mit Arduino Due
+        \item Alle LEDs an einer Datenleitung
+        \item Aktuelle Version mit Teensy 3.1
+        \item höhere Framerate durch DMA
+    \end{itemize}
+\end{frame} 
+\begin{frame}[<+->]
+    \frametitle{Controller Box}
+    \begin{itemize}
+        \item klassischen Arcadecontrollern nachempfunden
+        \item 2 Digitale Joysticks
+        \item 6 Player Buttons plus 2 Extra Buttons
+        \item Kasten selbst konstruiert und gebaut
+    \end{itemize}
+\end{frame} 
+\begin{frame}[<+->]
+    \frametitle{Controller Box}
+    \begin{itemize}
+        \item Inputs an einem Arduino Due
+        \item Ursprüngliche Version mit seriellem Kabel
+        \item aktuell Verbindung über Seriell auf Bluetooth Adapter
+        \item Betrieb mit recycleten Akkus
     \end{itemize}
 \end{frame} 
 
